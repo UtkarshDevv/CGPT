@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+
+.card {
+	font-family: 'Lato', Arial, sans-serif;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	margin: 10px;
+	margin-left: 80px;
+	margin-top:10px;
+	height:400px;
+	min-width: 250px;
+	max-width: 310px;
+	width: 100%;
+	background-color: #ffffff;
+	color: #2B2B2B;
+	text-align: center;
+	font-size: 16px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.cbhu{
+	font-family: 'Lato', Arial, sans-serif;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	margin: 10px;
+	margin-left: 80px;
+	margin-top:10px;
+	margin-bottom: -10px;
+	padding: 10px;
+	padding-top: 10px;
+	height:400px;
+	min-width: 250px;
+	width: 736px;
+	background-color: #ffffff;
+	color: #2B2B2B;
+	text-align: center;
+	font-size: 16px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.card, .cbhu * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.card .profile-image, .cbhu .profile-image{
+	padding: 5% 10% 0;
+}
+
+.card .profile-image img{
+	max-width: 100%;
+	vertical-align: top;
+	position: relative;
+	border-radius: 15%;
+	max-width: 60%;
+}
+
+ .cbhu .profile-image img{
+	vertical-align: top;
+	position: relative;
+	border-radius: 15%;
+	max-width: 35%;
+}
+
+.card figcaption, .cbhu figcaption {
+	padding: 5% 10% 15%;
+}
+
+.card h3 ,.cbhu h3{
+	font-family: 'Oswald';
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 3px 0;
+}
+
+.card h5, .cbhu h5 {
+	font-weight: 400;
+	margin: 0;
+	text-transform: uppercase;
+	color: #888;
+	letter-spacing: 1px;
+}
+
+.card .icons i, .cbhu .icons i{
+	color: #050505;
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 1.5em;
+}
+
+.card .icons i:hover{
+	color: #555;
+}
+
+.cbhu .icons i:hover{
+	color: #555;
+}
+
+.card .icons i a, .cbhu .icons i a {
+	text-decoration: none;
+}

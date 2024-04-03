@@ -1,0 +1,261 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.body{
+	min-height: 100vh;
+	 max-width: 1200px;
+}
+@media screen and (max-width: 959px) {
+	body {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 599px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+
+@media screen and (max-width: 959px){
+	
+}
+.Navbar{
+	width: 100%;
+	height: 80px;
+	background-color: #337ab7;
+	animation: Nav 5s;
+	position: fixed;
+	top:0;
+	z-index:1000;
+	margin-bottom: -200px;
+}
+@keyframes Nav {
+	from {background-color: #f16106;}
+	to {background-color: #337ab7;}
+}
+.Navbar ul{
+	list-style-type:none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 0.2rem;
+}
+
+.Navbar li{
+	display: inline;
+	height: 50px;
+
+}
+
+.Navbar li:first-child {
+	margin-right: auto;
+	height: 80px; /* Adjust the height to match the navbar height */
+	display: flex;
+	align-items: center; /* Vertically center the logo */
+}
+
+.Navbar li:first-child img {
+	margin-right: auto;
+	height: 50px; /* Set the height of the logo */
+	width: auto;
+	flex: 0 0 auto;
+	padding-left: 20px;
+	margin-bottom:14px;
+}
+
+.Navbar ul li:first-child img:hover{
+	transform: none !important; /* Remove the hover effect */
+}
+
+
+
+.Navbar ul li h4{
+	text-decoration: none !important;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	margin: 7px;
+	margin-bottom: 10px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.name {
+	margin: 4px;
+	margin-bottom: 26px;
+	margin-right: 120px;
+	height: 48px;
+	display: block;
+	background-color: #053666;
+	border-radius: 30px;
+	padding-top: 0.3rem;
+	overflow-y:clip;
+	transition: transform 0.4s;
+}
+.name:hover{
+	transform: scale(1.02);
+}
+#logo-link{
+	transform: scale(1) !important;
+}
+
+
+.Navbar ul li a{
+	padding: 0px 30px;
+	font-family: 'Merriweather', serif;
+	text-decoration: none;
+	color: black;
+	display: flex;
+	font-size: 1.1rem;
+	align-items: center;
+	transition: transform .2s; 
+}
+
+.Navbar ul li a:hover{
+	transform: scale(1.5);
+}
+
+
+
+.card {
+	display: flex;
+	width: 90%;
+	/* height: 200px; */
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 30px auto; /* Adjust margins as needed (top, right, bottom, left) */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform .3s ease;
+	overflow: hidden;
+}
+.card:hover{
+	transform: scale(1.03);
+}
+.card:first-child{
+	margin-top:90px;
+}
+.image {
+	flex: 0 0 auto;/* Prevent the image from flexing */
+	width: 170px; /* Set width of the image */
+	height: 180px; /* Set height of the image to match the width */
+	max-width: 100%; /* Set maximum width to prevent overflow */
+	max-height: 100%; /* Set maximum height to prevent overflow */
+	object-fit: cover; /* Maintain aspect ratio and cover entire area */
+	overflow: hidden; /* Hide overflow if the image exceeds dimensions */
+	margin: 10px 5px;
+	border-radius: 5px;
+}
+
+
+
+
+.image img {
+	width: 100%; /* Ensure the image covers the entire space */
+	height: 100%; /* Maintain aspect ratio */
+}
+
+.card-content {
+ flex: 1; /* Allow the content to flex and fill remaining space */
+	padding: 10px;
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+.card-content h2 {
+	margin-right:10px;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.card-content p {
+	font-size: 14px;
+	color: #666;
+}
+
+footer{
+	width: 100%;
+	margin-top: 40px;
+	height: 200px;
+	background-color: #000000;
+}
+.SocialIcons{
+	display:flex;
+	justify-content: center;
+}
+.SocialIcons a{
+	text-decoration: none;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 15px;
+	background-color:white;
+	border-radius:40%; 
+	margin-bottom: -20px;
+}
+.SocialIcons a i{
+	font-size: 1.5em;
+	color: black;
+	opacity: 0.9;
+}
+
+.SocialIcons a:hover{
+	background-color: #f16106;
+	transition: 0.5s;
+}
+.SocialIcons a:hover{
+	background-color: #337ab7;
+	transition: 0.5s;
+}
+.Footernav{
+	color: white;
+	margin: 30px 0px;
+}
+.Footernav ul{
+	list-style-type:none;
+	display: flex;
+	justify-content: center;
+}
+.Footernav ul li{
+	color: #4777d7;
+	margin: 15px;
+	margin-bottom: 40px;
+	font-size: 1em;
+	font-family: 'Merriweather', serif;
+}
+.footerBottom{
+	background-color: black;
+	padding: 20px;
+	text-align: center;
+}
+.footerBottom p{
+	color: white;
+	font-family: 'Merriweather', serif;
+}
+.footerBottom .designer{
+	opacity: 0.7;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin: 0px 5px;
+	animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+	0% {
+		color: #bd2514;
+	}
+	50% {
+		color: #e85b00;
+	}
+	100% {
+		color: #337ab7;
+	}
+}
+.form{
+	margin: 30px;
+	margin-top: 200px;
+	background-color: #543285;
+	padding: 20px;
+	border-radius: 2px;
+}

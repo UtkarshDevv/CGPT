@@ -1,0 +1,151 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.body{
+	min-height: 100vh;
+	 max-width: 1200px;
+}
+@media screen and (max-width: 959px) {
+	body {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 599px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+.Navbar{
+	width: 100%;
+	height: 80px;
+	background-color: #337ab7;
+	animation: Nav 5s;
+	position: fixed;
+	top:0;
+	z-index:1000;
+	margin-bottom: -200px;
+}
+@keyframes Nav {
+	from {background-color: #f16106;}
+	to {background-color: #337ab7;}
+}
+.Navbar ul{
+	list-style-type:none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 14px;
+}
+
+.Navbar li{
+	display: inline;
+	height: 50px;
+
+}
+
+.Navbar li:first-child {
+	margin-right: auto;
+	height: 80px; /* Adjust the height to match the navbar height */
+	display: flex;
+	align-items: center; /* Vertically center the logo */
+}
+
+.Navbar li:first-child img {
+	margin-right: auto;
+	height: 50px; /* Set the height of the logo */
+	width: auto;
+	flex: 0 0 auto;
+	padding-left: 20px;
+	margin-bottom:14px;
+}
+
+.Navbar ul li:first-child img:hover{
+	transform: none !important; /* Remove the hover effect */
+}
+
+
+
+.Navbar ul li h4{
+	text-decoration: none !important;
+	color: white;
+	padding: 5px;
+	text-align: center;
+	margin: 7px;
+	margin-bottom: 10px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.name {
+	margin: 4px;
+	margin-bottom: 26px;
+	margin-right: 120px;
+	height: 48px;
+	background-color: #053666;
+	border-radius: 30px;
+	overflow-y:clip;
+}
+
+
+
+.Navbar ul li a{
+	padding: 0px 30px;
+	font-family: 'Merriweather', serif;
+	text-decoration: none;
+	color: black;
+	display: flex;
+	align-items: center;
+	transition: transform .2s; 
+}
+
+.Navbar a:hover{
+	transform: scale(1.5);
+}
+
+.Footernav{
+	color: white;
+	margin: 30px 0px;
+}
+.Footernav ul{
+	list-style-type:none;
+	display: flex;
+	justify-content: center;
+}
+.Footernav ul li{
+	color: #4777d7;
+	margin: 15px;
+	margin-bottom: 40px;
+	font-size: 1em;
+	font-family: 'Merriweather', serif;
+}
+.footerBottom{
+	background-color: black;
+	padding: 20px;
+	text-align: center;
+}
+.footerBottom p{
+	color: white;
+	font-family: 'Merriweather', serif;
+}
+.footerBottom .designer{
+	opacity: 0.7;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin: 0px 5px;
+	animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+	0% {
+		color: #bd2514;
+	}
+	50% {
+		color: #e85b00;
+	}
+	100% {
+		color: #337ab7;
+	}
+}
